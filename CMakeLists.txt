@@ -36,7 +36,7 @@ set(SourceFiles OneLoneCoder_PGE_SpriteTransforms.cpp)
 #enjoy tinkering!
 
 # Find thread package
-set(THREADS_PREFER_PTHREAD_FLAD ON)
+set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
 
 # Find GL and GLX package
@@ -58,7 +58,7 @@ if (WIN32)
     set(Executable ${ExecutableName}.exe)
 endif (WIN32)
 
-add_executable(${Executable} 
+add_executable(${Executable}
     ${SourceFiles}
     # Add more directories, files or CMake variables here to have them compile too!
 )
@@ -70,14 +70,14 @@ target_link_libraries(${Executable}
     OpenGL::GLX
 )
 
-if (UNIX) 
-    target_link_libraries(${Executable} 
+if (UNIX)
+    target_link_libraries(${Executable}
         ${X11_LIBRARIES}
         PNG::PNG
     )
 endif (UNIX)
 if (WIN32)
-    target_link_libraries(${Executable} 
+    target_link_libraries(${Executable}
         ${WinSDK}
     )
 endif (WIN32)
