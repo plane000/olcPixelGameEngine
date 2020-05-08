@@ -12,7 +12,7 @@
 
 
 cmake_minimum_required(VERSION 3.7)
-project(oclPixelGameEngine) # You can change this with your project name!
+project(olcPixelGameEngine)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} CMakeFiles/) # Don't worry what this does, it just gives more compatability options with libraries!
 cmake_policy(SET CMP0037 OLD) # This just allows the / charicter in path names
