@@ -1,4 +1,4 @@
 .vs/
 CMakeFiles/
 out/
-CMakeCache/
+CMakeCache.txt
